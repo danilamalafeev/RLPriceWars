@@ -931,3 +931,57 @@ The gamma sweep (`0.90` vs `0.95`) again has no meaningful effect. The one-step 
 Conclusion:
 
 Model-based opponent-learning awareness is promising only in the limited sense that it can move prices upward while preserving the own-profit reward definition. It does not improve over `tabular_multi_cfr` on Oracle profit, and it underperforms `dqn_regret` on profit despite higher market prices. Under the requested classification this run is a price umbrella failure, not successful collusive-margin recovery. The next step should be multi-step rollout of the Victim Q-learning process or a differentiable LOLA-style objective; one-step modeled Q update is insufficient.
+
+## 2026-05-29 - Long-Run 100k+ Matrix Planning
+
+Source:
+
+```text
+EXPERIMENT_MATRIX_100K_PLAN.md
+```
+
+Decision:
+
+Short 20k-50k probes are not enough to distinguish transient undercutting from
+converged strategic behavior. The next experimental matrix should move the main
+conditions to at least `100000` steps, with neural and opponent-shaping blocks
+at `150000` steps where feasible.
+
+Planned blocks:
+
+```text
+1. Sanity checks and controls:
+   - symmetric tabular Q-vs-Q, 10 seeds, 100k steps
+   - static-Victim controls, 10 seeds, 100k steps
+
+2. Tabular heterogeneity:
+   - asymmetric alpha grid, 10 seeds, 100k steps
+   - asymmetric delta grid, 10 seeds, 100k steps
+
+3. Long-run architecture sweep:
+   - reservoir AC, DQN, DQN-JEPA, DQN-Regret, tabular CFR
+   - 10 seeds, 150k steps
+
+4. Opponent shaping and control:
+   - multi-step rollout/MPC Oracle with horizons L=5,12,25
+   - state-space augmented DQN
+   - 10 seeds, 150k steps
+```
+
+Purpose:
+
+The matrix is designed to answer whether the observed failures are transient or
+structural:
+
+```text
+undercutting persists        -> local exploitation is the stable attractor
+prices rise but profit falls -> price umbrella
+profit and market price rise -> promising opponent shaping
+```
+
+Important implementation note:
+
+Some planned controls are not yet implemented, especially static Victim,
+independent alpha/delta tabular heterogeneity, `tabular_rollout_lola`, and
+augmented DQN state. These should be treated as prerequisites, not as already
+available runner modes.

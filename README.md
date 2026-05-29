@@ -1,6 +1,133 @@
-# Calvano Market C++ Kernel
+# RL Price Wars
 
-This repository implements the first layer of the research system: a vectorized C++ market simulator with a `pybind11` Python binding. It is only a fast market kernel. It does not implement Buy Box logic, RL training, PyTorch integration, LOLA, DiCE, agents, replay buffers, multiprocessing, or distributed training.
+This repository contains an experimental research stack for adversarial
+reinforcement learning in Calvano-style algorithmic price competition.
+
+The project starts from a symmetric Calvano et al. tabular Q-learning
+replication, then replaces one learner with a stronger Oracle agent. The core
+research question is whether a stronger agent can do more than undercut an
+adaptive Q-learning competitor: can it shape the competitor's behavior while
+preserving high own profit?
+
+Main methodological constraint:
+
+```text
+Oracle reward = own profit
+r_O = profit_O
+```
+
+Relative-profit or asymmetry rewards may be used only as diagnostics, not as
+the main result.
+
+## Repository Layout
+
+```text
+calvano_market.py                  Static Calvano benchmarks and profit matrix
+calvano_qlearning.py               Tabular Calvano Q-vs-Q replication
+run_calvano_replication.py         Baseline replication entrypoint
+experiments/dqn_oracle_vs_qvictim.py
+                                   Oracle-vs-adaptive-Q-Victim experiment runner
+experiments/reservoir_oracle.py    Reservoir actor-critic experiment runner
+neural/                            PyTorch policies, observations, losses, rollout utilities
+src/, include/                     C++ market kernel and pybind11 binding
+tests/                             Regression, kernel, and experiment smoke tests
+RESEARCH_OVERVIEW.md               Current research narrative
+RESEARCH_JOURNAL.md                Chronological experiment notes
+EXPERIMENT_MATRIX_100K_PLAN.md     Next long-run 100k-150k matrix plan
+```
+
+Generated experiment outputs are written under `results/` and are intentionally
+ignored by git.
+
+## Implemented Experiment Modes
+
+The main Oracle-vs-Q-Victim runner currently supports:
+
+```text
+actor_critic
+dqn
+dqn_jepa
+dqn_regret
+tabular_cfr
+tabular_multi_cfr
+tabular_lola
+tabular_model_lola
+```
+
+The next planned mode is a multi-step cloned-Q rollout/MPC Oracle, tentatively:
+
+```text
+tabular_rollout_lola
+```
+
+## Quick Start
+
+Install in editable mode and run the test suite:
+
+```bash
+python -m pip install -e .
+pytest
+```
+
+Run the Calvano Q-learning replication:
+
+```bash
+python run_calvano_replication.py
+```
+
+Run a short Oracle-vs-Q-Victim smoke test:
+
+```bash
+python -m experiments.dqn_oracle_vs_qvictim \
+  --oracle-kind tabular_cfr \
+  --total-steps 200 \
+  --B 8 --H 8 --K 15 \
+  --eval-every 100 \
+  --eval-steps 200 \
+  --out-dir results/tabular_cfr_smoke \
+  --seed 0
+```
+
+## Current Research Status
+
+The symmetric Q-vs-Q baseline produces high-price tacit collusion:
+
+```text
+Nash price:          about 1.473
+Monopoly price:      about 1.925
+Q-vs-Q market price: about 1.803
+Q-vs-Q profit:       about 0.322 / 0.322
+```
+
+Against an adaptive tabular Q-learning Victim, stronger Oracle agents generally
+beat the Victim relatively but do not yet beat the Q-vs-Q collusive profit
+benchmark in absolute terms. The dominant observed failure modes are:
+
+```text
+undercutting:   Oracle gains relative profit while market price falls
+price umbrella: Oracle raises prices but the Victim captures much of the gain
+```
+
+See `RESEARCH_OVERVIEW.md` and `RESEARCH_JOURNAL.md` for detailed results.
+
+## Next Long-Run Matrix
+
+The short 20k-50k probes are being replaced with a larger 100k-150k matrix:
+
+```text
+100k: symmetric Q-vs-Q and baseline controls
+100k: tabular heterogeneity over alpha and delta
+150k: reservoir AC, DQN, DQN-JEPA, DQN-Regret, tabular CFR
+150k: rollout/MPC opponent-shaping experiments
+```
+
+The full plan is in `EXPERIMENT_MATRIX_100K_PLAN.md`.
+
+## Calvano Market C++ Kernel
+
+The lowest layer of the project is a vectorized C++ market simulator with a
+`pybind11` Python binding. It accepts discrete price action indices and returns
+market arrays; learning logic lives in Python/PyTorch on top of this kernel.
 
 ## Model
 

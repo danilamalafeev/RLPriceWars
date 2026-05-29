@@ -161,6 +161,66 @@ JEPA raises prices and reduces aggressive undercutting on average, but it does n
 
 This suggests that prediction alone is not enough. The Oracle becomes more cautious, but not more strategically dominant.
 
+### Tabular CFR And Multi-Step CFR
+
+Counterfactual regret mechanisms were tested to determine whether explicit
+counterfactual payoff accounting can escape local undercutting.
+
+3-seed 20k comparison:
+
+```text
+mode                    oracle_profit  victim_profit  profit_gap  market_price
+tabular_cfr             0.3080         0.2273         +0.0806     1.6401
+tabular_multi_cfr       0.3099         0.2282         +0.0816     1.6412
+```
+
+Interpretation:
+
+Tabular CFR produces a very stable undercutting attractor. Multi-step CFR is a
+small positive correction, but it does not move the system close to the Q-vs-Q
+collusive benchmark:
+
+```text
+Q-vs-Q market price: about 1.803
+Q-vs-Q profit:       about 0.322 / 0.322
+```
+
+The important implication is that the failure is not just neural instability or
+replay-buffer pathology. Even a clean tabular counterfactual procedure tends to
+use information for local exploitation rather than margin-preserving strategic
+discipline.
+
+### Tabular LOLA-Lite And One-Step Model-Based LOLA
+
+LOLA-style variants were tested to make the Oracle reason about the Victim's
+future learning process while keeping the Oracle reward as own profit.
+
+Tabular LOLA-lite:
+
+```text
+tau   oracle_profit  victim_profit  profit_gap  market_price
+0.03  0.3028         0.2231         +0.0797     1.6354
+0.05  0.2982         0.2370         +0.0611     1.6507
+0.10  0.2913         0.2546         +0.0367     1.6702
+```
+
+One-step model-based LOLA, which directly reads the Victim Q-table:
+
+```text
+tau   oracle_profit  victim_profit  profit_gap  market_price
+0.03  0.3015         0.2399         +0.0615     1.6537
+0.05  0.2963         0.2496         +0.0467     1.6644
+0.10  0.2898         0.2618         +0.0280     1.6782
+```
+
+Interpretation:
+
+The LOLA-style agents can raise prices, but the gain mostly accrues to the
+adaptive Victim. This is a price-umbrella failure. The one-step Q-table model is
+not a full LOLA/MPC mechanism: it often updates `Q[old_state, action]`, while
+the next Victim decision is made from `Q[next_state, :]`. This dead-update
+problem motivates a multi-step cloned-Q rollout Oracle.
+
 ## Main Economic Interpretation So Far
 
 The project has found a clear distinction between:
@@ -175,17 +235,22 @@ and
 opponent-shaping advantage
 ```
 
-Reservoir and JEPA improve the Oracle's representation of the market. But representation alone does not teach the Oracle how to control the Victim's future learning trajectory.
+Reservoir, DQN, JEPA, CFR, and one-step LOLA improve the Oracle's information or
+reasoning in different ways. But none yet teaches the Oracle how to control the
+Victim's future learning trajectory while preserving its own absolute margin.
 
 Current evidence:
 
 ```text
 Memory can create exploitation.
 Prediction can reduce destructive pricing.
-Neither reliably creates strategic dominance.
+Counterfactual regret stabilizes undercutting.
+One-step opponent learning creates price umbrellas.
+None reliably creates strategic dominance.
 ```
 
-This is why the next stage should move toward explicit opponent-aware mechanisms.
+This is why the next stage should move from one-step opponent-aware mechanisms
+to multi-step control over the Victim's learning dynamics.
 
 ## Theoretical Links
 
@@ -288,7 +353,7 @@ The current research narrative can be stated as:
    opponent-aware strategic reasoning.
 ```
 
-This motivates CFR and LOLA:
+This motivated CFR and LOLA:
 
 ```text
 CFR / multi-step regret:
@@ -298,7 +363,7 @@ LOLA / opponent shaping:
   use information to affect the opponent's future learning process.
 ```
 
-## Why CFR And LOLA Are Next
+## What CFR And LOLA Have Shown
 
 ### CFR / Regret Accounting
 
@@ -311,7 +376,9 @@ given how the Victim behaved?
 
 A regret-aware auxiliary model can test whether explicit counterfactual payoff information helps the Oracle avoid locally profitable but margin-destroying undercutting.
 
-This is not reward shaping if the actual reward remains own profit and regret is used as an auxiliary learning signal.
+This is not reward shaping if the actual reward remains own profit and regret is
+used as an auxiliary learning signal. Empirically, the current CFR variants are
+useful baselines but do not solve the absolute-margin problem.
 
 ### LOLA / Opponent-Learning Awareness
 
@@ -323,13 +390,36 @@ The key question becomes:
 How does today's Oracle action change tomorrow's Victim policy?
 ```
 
-LOLA-style updates try to account for the opponent's learning gradient. In this project, the equivalent idea is to let the Oracle reason about the Victim's future Q-learning update, not just the immediate market response.
+LOLA-style updates try to account for the opponent's learning gradient. In this
+project, the equivalent idea is to let the Oracle reason about the Victim's
+future Q-learning update, not just the immediate market response.
 
 This directly targets the failure mode observed so far:
 
 ```text
 Oracle reacts to the Victim,
 but does not yet shape the Victim.
+```
+
+The one-step tabular versions show that simply seeing the Victim Q-table is not
+enough. The Oracle must reason over a multi-step path in which its actions
+change the future Q-table entries that the Victim will actually revisit.
+
+## Next Experimental Matrix
+
+The next planned matrix replaces short probes with long-run convergence checks:
+
+```text
+100k: symmetric Q-vs-Q baseline and static-Victim controls
+100k: tabular heterogeneity over alpha and delta
+150k: reservoir AC, DQN, DQN-JEPA, DQN-Regret, tabular CFR
+150k: multi-step rollout/MPC opponent-shaping experiments
+```
+
+The full plan is recorded in:
+
+```text
+EXPERIMENT_MATRIX_100K_PLAN.md
 ```
 
 ## Metrics That Must Always Be Reported
@@ -372,8 +462,8 @@ the stronger agent, even under pure own-profit maximization.
 But:
 
 ```text
-Reservoir and JEPA do not yet show robust absolute-profit improvement
-over the symmetric Q-vs-Q collusive benchmark.
+Reservoir, DQN, JEPA, CFR, and one-step LOLA variants do not yet show robust
+absolute-profit improvement over the symmetric Q-vs-Q collusive benchmark.
 ```
 
 ## Current Non-Claim
@@ -390,7 +480,7 @@ CFR or LOLA will necessarily solve the problem.
 The correct position is:
 
 ```text
-Reservoir and JEPA expose the limitations of memory/prediction-only agents.
-CFR and LOLA are justified next mechanisms to test because they explicitly
-target regret and opponent adaptation.
+The current results expose the limitations of memory, prediction, one-step
+counterfactual regret, and one-step opponent-learning awareness. The next
+mechanism to test is multi-step control over the Victim's Q-learning trajectory.
 ```
