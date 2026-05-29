@@ -982,6 +982,7 @@ profit and market price rise -> promising opponent shaping
 Important implementation note:
 
 Some planned controls are not yet implemented, especially static Victim,
-independent alpha/delta tabular heterogeneity, `tabular_rollout_lola`, and
-augmented DQN state. These should be treated as prerequisites, not as already
-available runner modes.
+independent alpha/delta tabular heterogeneity, and augmented DQN state.
+`tabular_rollout_lola` is now available as a runner mode, but it still needs
+the planned long-run multi-seed validation before it should be interpreted as a
+result.

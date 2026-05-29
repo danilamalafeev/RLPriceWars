@@ -229,21 +229,22 @@ Q-learning update often changes `Q[old_state, action]`, while the next Victim
 choice is made from `Q[next_state, :]`. A multi-step cloned-Q rollout is needed
 so Oracle actions can affect the Victim table through state revisits.
 
-Implementation prerequisite:
-
-Add a new mode such as:
+Runner mode:
 
 ```text
 tabular_rollout_lola
 ```
 
-It should:
+This mode should be treated as the rollout/MPC prototype. It should:
 
 - clone the Victim Q-table,
 - simulate the Victim Q-learning process for `L` future steps,
 - evaluate cumulative discounted Oracle own profit,
 - choose the real Oracle action from the rollout values,
 - keep the actual Oracle reward as `profit_O`.
+
+The mode exists in the runner; the remaining requirement is long-run multi-seed
+validation across the planned horizons.
 
 ### 2. State-Space Augmented DQN
 
