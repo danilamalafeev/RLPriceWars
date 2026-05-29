@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "pybind11>=2.12"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calvano-market-cpp"
+version = "0.1.0"
+description = "Vectorized Calvano-style Bertrand market simulator kernel with pybind11 bindings"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20", "numba>=0.57", "pandas>=1.5", "torch>=2.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
