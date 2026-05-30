@@ -986,3 +986,171 @@ independent alpha/delta tabular heterogeneity, and augmented DQN state.
 `tabular_rollout_lola` is now available as a runner mode, but it still needs
 the planned long-run multi-seed validation before it should be interpreted as a
 result.
+
+## 2026-05-30 - 10M Q-vs-Q Baseline And Tabular Heterogeneity
+
+Source:
+
+```text
+GitHub branch: origin/codex/results-snapshot-20260530
+commit: 9855a6c Add 10M baseline and heterogeneity results
+
+results/long_matrix_10m_plus/block1_q_vs_q_10m_representative_100s/
+results/long_matrix_10m_plus/block2_tabular_heterogeneity_10m_100seeds/
+```
+
+Purpose:
+
+Resolve the 100k baseline problem. The earlier 100k Q-vs-Q run produced low
+prices and low profits because it evaluated the agents while exploration was
+still high:
+
+```text
+epsilon_100k = exp(-4e-6 * 100000) ~= 0.67
+```
+
+The 100k run was therefore an early-training snapshot, not a mature Calvano
+baseline.
+
+10M Q-vs-Q representative baseline:
+
+```text
+sessions: 100
+max_periods: 10000000
+convergence_window: 10000000
+eval_periods: 100000
+alpha: 0.15
+beta: 4e-6
+delta: 0.95
+m: 15
+```
+
+Result:
+
+```text
+average_long_run_price  ~= 1.7967
+average_long_run_profit ~= 0.3206
+average_profit_gain     ~= 0.8561
+median_profit_gain      ~= 0.8709
+std_long_run_price      ~= 0.0760
+std_long_run_profit     ~= 0.0137
+
+cycle length:
+  length 1: 62 / 100
+  length 2: 29 / 100
+  length 3:  7 / 100
+  length 4:  2 / 100
+```
+
+Interpretation:
+
+The 10M run restores the expected Calvano-style tacit collusion benchmark:
+
+```text
+Q-vs-Q market price ~= 1.80
+Q-vs-Q firm profit  ~= 0.32
+```
+
+This confirms that the previous `1.803 / 0.322` representative baseline remains
+the correct reference point. The 100k baseline should not be used as a
+replacement benchmark.
+
+Technical caveat:
+
+The 10M run used:
+
+```text
+convergence_window = 10000000
+max_periods        = 10000000
+```
+
+So `convergence_rate = 0.0` is not substantively meaningful. With the window
+equal to the cap, formal convergence is mechanically almost impossible. The
+useful result is the final greedy-policy evaluation after a long learning
+horizon, not the convergence flag.
+
+Tabular heterogeneity 10M:
+
+```text
+conditions: 4
+seeds per condition: 100
+max_periods: 10000000
+eval_periods: 100000
+```
+
+Aggregate results:
+
+```text
+condition              oracle_profit  victim_profit  gap       market_price
+alpha O=0.03 V=0.15    0.3133         0.3027         +0.0106   1.7347
+alpha O=0.15 V=0.03    0.3013         0.3137         -0.0125   1.7343
+delta O=0.70 V=0.95    0.2913         0.2896         +0.0017   1.6815
+delta O=0.95 V=0.70    0.2858         0.3019         -0.0161   1.6964
+```
+
+Win counts:
+
+```text
+condition              oracle_profit > victim_profit
+alpha O=0.03 V=0.15    47 / 100
+alpha O=0.15 V=0.03    26 / 100
+delta O=0.70 V=0.95    49 / 100
+delta O=0.95 V=0.70    31 / 100
+```
+
+Interpretation:
+
+The alpha asymmetry result is the clearest signal. The slower-learning Oracle
+does better than the faster-learning Oracle:
+
+```text
+Oracle alpha 0.03 vs Victim alpha 0.15:
+  Oracle profit advantage ~= +0.0106
+
+Oracle alpha 0.15 vs Victim alpha 0.03:
+  Oracle profit disadvantage ~= -0.0125
+```
+
+This contradicts the naive "faster learner dominates" hypothesis. In this
+Calvano-style tabular setting, lower learning speed can be strategically
+valuable, plausibly because it creates more inertial/commitment-like behavior
+and reduces reactive price-war dynamics.
+
+The delta asymmetry result is also anti-naive:
+
+```text
+Oracle delta 0.95 vs Victim delta 0.70:
+  Oracle profit disadvantage ~= -0.0161
+```
+
+So "more patient Oracle dominates" is not supported. The patient Oracle appears
+to concede surplus to the less patient Victim in this asymmetric learning setup.
+
+Collusion effect:
+
+All heterogeneity conditions have lower market prices than the symmetric Q-vs-Q
+baseline:
+
+```text
+symmetric Q-vs-Q 10M market price: ~= 1.797
+alpha heterogeneity market price:  ~= 1.734
+delta heterogeneity market price:  ~= 1.682-1.696
+```
+
+Thus tabular heterogeneity weakens tacit collusion but does not collapse prices
+all the way to Nash. The result supports a softer claim:
+
+```text
+asymmetric learning parameters destabilize and redistribute collusive surplus,
+but the direction of advantage is not monotone in "stronger/faster/more
+patient" learning.
+```
+
+Research implication:
+
+The adversarial Oracle results should not be interpreted through a simple
+"more capable agent wins" lens. The tabular heterogeneity results show that
+commitment, inertia, and timing can dominate raw adaptivity. This strengthens
+the motivation for hierarchical/teacher-style Oracle designs with temporally
+extended commitment and punishment options, rather than one-step best-response
+or one-step LOLA mechanisms.
