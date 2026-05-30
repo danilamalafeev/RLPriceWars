@@ -1,0 +1,18 @@
+{
+  "code_version": "unknown",
+  "convergence_window": 10000000,
+  "created_at": "2026-05-30T18:08:56.482351+00:00",
+  "delta": 0.95,
+  "dirty_worktree": null,
+  "eval_periods": 100000,
+  "format": "csv",
+  "k": 1,
+  "m": 15,
+  "max_periods": 10000000,
+  "mode": "representative",
+  "mu": 0.25,
+  "seed": 10000,
+  "sessions": 100,
+  "workers": 6,
+  "xi": 0.1
+}

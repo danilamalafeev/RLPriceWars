@@ -1,0 +1,41 @@
+{
+  "condition": {
+    "alpha_0": 0.15,
+    "alpha_1": 0.15,
+    "beta_0": 4e-06,
+    "beta_1": 4e-06,
+    "delta_0": 0.7,
+    "delta_1": 0.95,
+    "name": "delta_o0.70_v0.95"
+  },
+  "market_config": {
+    "costs": null,
+    "demand_scale": 1.0,
+    "m": 15,
+    "mu": 0.25,
+    "n": 2,
+    "outside_quality": 0.0,
+    "qualities": null,
+    "xi": 0.1
+  },
+  "q_config": {
+    "alpha": 0.15,
+    "alpha_0": 0.15,
+    "alpha_1": 0.15,
+    "beta": 4e-06,
+    "beta_0": 4e-06,
+    "beta_1": 4e-06,
+    "convergence_window": 10000000,
+    "delta": 0.95,
+    "delta_0": 0.7,
+    "delta_1": 0.95,
+    "eval_periods": 100000,
+    "k": 1,
+    "keep_q": false,
+    "m": 15,
+    "max_periods": 10000000,
+    "n": 2,
+    "seed": 12
+  },
+  "seed": 12
+}

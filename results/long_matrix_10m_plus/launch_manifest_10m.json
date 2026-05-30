@@ -1,0 +1,42 @@
+﻿[
+    {
+        "name":  "block1_q_vs_q_10m_representative_100s",
+        "pid":  24344,
+        "out_dir":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block1_q_vs_q_10m_representative_100s",
+        "stdout":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block1_q_vs_q_10m_representative_100s.log",
+        "stderr":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block1_q_vs_q_10m_representative_100s.err.log",
+        "command":  "C:\\ProgramData\\Anaconda3\\python.exe -u -m scripts.run_full_calvano_replication --mode representative --sessions 100 --workers 6 --seed 10000 --max-periods 10000000 --convergence-window 10000000 --eval-periods 100000 --out-dir C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block1_q_vs_q_10m_representative_100s --resume --format csv"
+    },
+    {
+        "name":  "block2_heterogeneity_10m_seeds_0_24",
+        "pid":  25716,
+        "out_dir":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds",
+        "stdout":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_0_24.log",
+        "stderr":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_0_24.err.log",
+        "command":  "C:\\ProgramData\\Anaconda3\\python.exe -u -m scripts.run_tabular_heterogeneity --root C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds --seeds 0-24 --max-periods 10000000 --eval-periods 100000 --m 15 --resume"
+    },
+    {
+        "name":  "block2_heterogeneity_10m_seeds_25_49",
+        "pid":  30684,
+        "out_dir":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds",
+        "stdout":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_25_49.log",
+        "stderr":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_25_49.err.log",
+        "command":  "C:\\ProgramData\\Anaconda3\\python.exe -u -m scripts.run_tabular_heterogeneity --root C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds --seeds 25-49 --max-periods 10000000 --eval-periods 100000 --m 15 --resume"
+    },
+    {
+        "name":  "block2_heterogeneity_10m_seeds_50_74",
+        "pid":  8580,
+        "out_dir":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds",
+        "stdout":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_50_74.log",
+        "stderr":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_50_74.err.log",
+        "command":  "C:\\ProgramData\\Anaconda3\\python.exe -u -m scripts.run_tabular_heterogeneity --root C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds --seeds 50-74 --max-periods 10000000 --eval-periods 100000 --m 15 --resume"
+    },
+    {
+        "name":  "block2_heterogeneity_10m_seeds_75_99",
+        "pid":  16036,
+        "out_dir":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds",
+        "stdout":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_75_99.log",
+        "stderr":  "C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_heterogeneity_10m_seeds_75_99.err.log",
+        "command":  "C:\\ProgramData\\Anaconda3\\python.exe -u -m scripts.run_tabular_heterogeneity --root C:\\Users\\я\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds --seeds 75-99 --max-periods 10000000 --eval-periods 100000 --m 15 --resume"
+    }
+]

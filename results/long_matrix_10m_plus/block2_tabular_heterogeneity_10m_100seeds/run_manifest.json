@@ -1,0 +1,2810 @@
+{
+  "aggregate_info": {
+    "completed_summaries": 400
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.7",
+  "tasks": [
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_0",
+      "seed": 0,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_0\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_1",
+      "seed": 1,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_1\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_2",
+      "seed": 2,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_2\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_3",
+      "seed": 3,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_3\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_4",
+      "seed": 4,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_4\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_5",
+      "seed": 5,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_5\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_6",
+      "seed": 6,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_6\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_7",
+      "seed": 7,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_7\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_8",
+      "seed": 8,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_8\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_9",
+      "seed": 9,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_9\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_10",
+      "seed": 10,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_10\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_11",
+      "seed": 11,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_11\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_12",
+      "seed": 12,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_12\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_13",
+      "seed": 13,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_13\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_14",
+      "seed": 14,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_14\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_15",
+      "seed": 15,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_15\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_16",
+      "seed": 16,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_16\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_17",
+      "seed": 17,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_17\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_18",
+      "seed": 18,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_18\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_19",
+      "seed": 19,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_19\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_20",
+      "seed": 20,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_20\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_21",
+      "seed": 21,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_21\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_22",
+      "seed": 22,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_22\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_23",
+      "seed": 23,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_23\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_24",
+      "seed": 24,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_24\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_25",
+      "seed": 25,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_25\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_26",
+      "seed": 26,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_26\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_27",
+      "seed": 27,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_27\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_28",
+      "seed": 28,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_28\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_29",
+      "seed": 29,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_29\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_30",
+      "seed": 30,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_30\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_31",
+      "seed": 31,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_31\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_32",
+      "seed": 32,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_32\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_33",
+      "seed": 33,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_33\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_34",
+      "seed": 34,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_34\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_35",
+      "seed": 35,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_35\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_36",
+      "seed": 36,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_36\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_37",
+      "seed": 37,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_37\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_38",
+      "seed": 38,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_38\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_39",
+      "seed": 39,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_39\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_40",
+      "seed": 40,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_40\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_41",
+      "seed": 41,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_41\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_42",
+      "seed": 42,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_42\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_43",
+      "seed": 43,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_43\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_44",
+      "seed": 44,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_44\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_45",
+      "seed": 45,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_45\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_46",
+      "seed": 46,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_46\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_47",
+      "seed": 47,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_47\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_48",
+      "seed": 48,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_48\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_49",
+      "seed": 49,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_49\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_50",
+      "seed": 50,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_50\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_51",
+      "seed": 51,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_51\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_52",
+      "seed": 52,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_52\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_53",
+      "seed": 53,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_53\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_54",
+      "seed": 54,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_54\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_55",
+      "seed": 55,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_55\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_56",
+      "seed": 56,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_56\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_57",
+      "seed": 57,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_57\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_58",
+      "seed": 58,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_58\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_59",
+      "seed": 59,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_59\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_60",
+      "seed": 60,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_60\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_61",
+      "seed": 61,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_61\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_62",
+      "seed": 62,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_62\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_63",
+      "seed": 63,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_63\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_64",
+      "seed": 64,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_64\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_65",
+      "seed": 65,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_65\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_66",
+      "seed": 66,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_66\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_67",
+      "seed": 67,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_67\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_68",
+      "seed": 68,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_68\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_69",
+      "seed": 69,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_69\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_70",
+      "seed": 70,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_70\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_71",
+      "seed": 71,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_71\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_72",
+      "seed": 72,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_72\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_73",
+      "seed": 73,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_73\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_74",
+      "seed": 74,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_74\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_75",
+      "seed": 75,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_75\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_76",
+      "seed": 76,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_76\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_77",
+      "seed": 77,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_77\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_78",
+      "seed": 78,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_78\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_79",
+      "seed": 79,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_79\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_80",
+      "seed": 80,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_80\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_81",
+      "seed": 81,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_81\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_82",
+      "seed": 82,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_82\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_83",
+      "seed": 83,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_83\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_84",
+      "seed": 84,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_84\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_85",
+      "seed": 85,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_85\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_86",
+      "seed": 86,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_86\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_87",
+      "seed": 87,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_87\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_88",
+      "seed": 88,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_88\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_89",
+      "seed": 89,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_89\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_90",
+      "seed": 90,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_90\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_91",
+      "seed": 91,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_91\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_92",
+      "seed": 92,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_92\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_93",
+      "seed": 93,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_93\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_94",
+      "seed": 94,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_94\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_95",
+      "seed": 95,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_95\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_96",
+      "seed": 96,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_96\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_97",
+      "seed": 97,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_97\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_98",
+      "seed": 98,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_98\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.15_v0.03",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_99",
+      "seed": 99,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.15_v0.03\\seed_99\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_0",
+      "seed": 0,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_0\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_1",
+      "seed": 1,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_1\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_2",
+      "seed": 2,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_2\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_3",
+      "seed": 3,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_3\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_4",
+      "seed": 4,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_4\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_5",
+      "seed": 5,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_5\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_6",
+      "seed": 6,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_6\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_7",
+      "seed": 7,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_7\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_8",
+      "seed": 8,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_8\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_9",
+      "seed": 9,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_9\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_10",
+      "seed": 10,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_10\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_11",
+      "seed": 11,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_11\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_12",
+      "seed": 12,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_12\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_13",
+      "seed": 13,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_13\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_14",
+      "seed": 14,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_14\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_15",
+      "seed": 15,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_15\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_16",
+      "seed": 16,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_16\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_17",
+      "seed": 17,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_17\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_18",
+      "seed": 18,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_18\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_19",
+      "seed": 19,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_19\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_20",
+      "seed": 20,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_20\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_21",
+      "seed": 21,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_21\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_22",
+      "seed": 22,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_22\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_23",
+      "seed": 23,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_23\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_24",
+      "seed": 24,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_24\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_25",
+      "seed": 25,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_25\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_26",
+      "seed": 26,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_26\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_27",
+      "seed": 27,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_27\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_28",
+      "seed": 28,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_28\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_29",
+      "seed": 29,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_29\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_30",
+      "seed": 30,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_30\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_31",
+      "seed": 31,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_31\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_32",
+      "seed": 32,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_32\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_33",
+      "seed": 33,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_33\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_34",
+      "seed": 34,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_34\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_35",
+      "seed": 35,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_35\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_36",
+      "seed": 36,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_36\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_37",
+      "seed": 37,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_37\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_38",
+      "seed": 38,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_38\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_39",
+      "seed": 39,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_39\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_40",
+      "seed": 40,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_40\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_41",
+      "seed": 41,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_41\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_42",
+      "seed": 42,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_42\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_43",
+      "seed": 43,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_43\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_44",
+      "seed": 44,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_44\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_45",
+      "seed": 45,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_45\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_46",
+      "seed": 46,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_46\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_47",
+      "seed": 47,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_47\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_48",
+      "seed": 48,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_48\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_49",
+      "seed": 49,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_49\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_50",
+      "seed": 50,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_50\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_51",
+      "seed": 51,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_51\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_52",
+      "seed": 52,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_52\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_53",
+      "seed": 53,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_53\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_54",
+      "seed": 54,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_54\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_55",
+      "seed": 55,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_55\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_56",
+      "seed": 56,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_56\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_57",
+      "seed": 57,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_57\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_58",
+      "seed": 58,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_58\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_59",
+      "seed": 59,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_59\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_60",
+      "seed": 60,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_60\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_61",
+      "seed": 61,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_61\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_62",
+      "seed": 62,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_62\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_63",
+      "seed": 63,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_63\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_64",
+      "seed": 64,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_64\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_65",
+      "seed": 65,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_65\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_66",
+      "seed": 66,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_66\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_67",
+      "seed": 67,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_67\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_68",
+      "seed": 68,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_68\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_69",
+      "seed": 69,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_69\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_70",
+      "seed": 70,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_70\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_71",
+      "seed": 71,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_71\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_72",
+      "seed": 72,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_72\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_73",
+      "seed": 73,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_73\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_74",
+      "seed": 74,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_74\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_75",
+      "seed": 75,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_75\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_76",
+      "seed": 76,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_76\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_77",
+      "seed": 77,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_77\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_78",
+      "seed": 78,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_78\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_79",
+      "seed": 79,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_79\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_80",
+      "seed": 80,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_80\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_81",
+      "seed": 81,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_81\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_82",
+      "seed": 82,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_82\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_83",
+      "seed": 83,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_83\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_84",
+      "seed": 84,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_84\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_85",
+      "seed": 85,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_85\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_86",
+      "seed": 86,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_86\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_87",
+      "seed": 87,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_87\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_88",
+      "seed": 88,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_88\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_89",
+      "seed": 89,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_89\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_90",
+      "seed": 90,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_90\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_91",
+      "seed": 91,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_91\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_92",
+      "seed": 92,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_92\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_93",
+      "seed": 93,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_93\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_94",
+      "seed": 94,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_94\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_95",
+      "seed": 95,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_95\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_96",
+      "seed": 96,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_96\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_97",
+      "seed": 97,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_97\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_98",
+      "seed": 98,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_98\\summary.json"
+    },
+    {
+      "condition": "alpha_o0.03_v0.15",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_99",
+      "seed": 99,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\alpha_o0.03_v0.15\\seed_99\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_0",
+      "seed": 0,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_0\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_1",
+      "seed": 1,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_1\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_2",
+      "seed": 2,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_2\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_3",
+      "seed": 3,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_3\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_4",
+      "seed": 4,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_4\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_5",
+      "seed": 5,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_5\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_6",
+      "seed": 6,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_6\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_7",
+      "seed": 7,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_7\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_8",
+      "seed": 8,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_8\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_9",
+      "seed": 9,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_9\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_10",
+      "seed": 10,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_10\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_11",
+      "seed": 11,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_11\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_12",
+      "seed": 12,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_12\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_13",
+      "seed": 13,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_13\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_14",
+      "seed": 14,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_14\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_15",
+      "seed": 15,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_15\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_16",
+      "seed": 16,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_16\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_17",
+      "seed": 17,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_17\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_18",
+      "seed": 18,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_18\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_19",
+      "seed": 19,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_19\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_20",
+      "seed": 20,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_20\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_21",
+      "seed": 21,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_21\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_22",
+      "seed": 22,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_22\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_23",
+      "seed": 23,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_23\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_24",
+      "seed": 24,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_24\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_25",
+      "seed": 25,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_25\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_26",
+      "seed": 26,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_26\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_27",
+      "seed": 27,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_27\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_28",
+      "seed": 28,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_28\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_29",
+      "seed": 29,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_29\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_30",
+      "seed": 30,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_30\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_31",
+      "seed": 31,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_31\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_32",
+      "seed": 32,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_32\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_33",
+      "seed": 33,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_33\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_34",
+      "seed": 34,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_34\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_35",
+      "seed": 35,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_35\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_36",
+      "seed": 36,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_36\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_37",
+      "seed": 37,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_37\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_38",
+      "seed": 38,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_38\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_39",
+      "seed": 39,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_39\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_40",
+      "seed": 40,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_40\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_41",
+      "seed": 41,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_41\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_42",
+      "seed": 42,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_42\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_43",
+      "seed": 43,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_43\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_44",
+      "seed": 44,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_44\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_45",
+      "seed": 45,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_45\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_46",
+      "seed": 46,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_46\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_47",
+      "seed": 47,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_47\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_48",
+      "seed": 48,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_48\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_49",
+      "seed": 49,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_49\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_50",
+      "seed": 50,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_50\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_51",
+      "seed": 51,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_51\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_52",
+      "seed": 52,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_52\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_53",
+      "seed": 53,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_53\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_54",
+      "seed": 54,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_54\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_55",
+      "seed": 55,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_55\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_56",
+      "seed": 56,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_56\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_57",
+      "seed": 57,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_57\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_58",
+      "seed": 58,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_58\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_59",
+      "seed": 59,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_59\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_60",
+      "seed": 60,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_60\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_61",
+      "seed": 61,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_61\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_62",
+      "seed": 62,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_62\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_63",
+      "seed": 63,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_63\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_64",
+      "seed": 64,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_64\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_65",
+      "seed": 65,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_65\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_66",
+      "seed": 66,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_66\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_67",
+      "seed": 67,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_67\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_68",
+      "seed": 68,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_68\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_69",
+      "seed": 69,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_69\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_70",
+      "seed": 70,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_70\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_71",
+      "seed": 71,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_71\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_72",
+      "seed": 72,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_72\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_73",
+      "seed": 73,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_73\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_74",
+      "seed": 74,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_74\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_75",
+      "seed": 75,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_75\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_76",
+      "seed": 76,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_76\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_77",
+      "seed": 77,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_77\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_78",
+      "seed": 78,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_78\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_79",
+      "seed": 79,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_79\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_80",
+      "seed": 80,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_80\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_81",
+      "seed": 81,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_81\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_82",
+      "seed": 82,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_82\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_83",
+      "seed": 83,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_83\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_84",
+      "seed": 84,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_84\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_85",
+      "seed": 85,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_85\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_86",
+      "seed": 86,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_86\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_87",
+      "seed": 87,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_87\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_88",
+      "seed": 88,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_88\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_89",
+      "seed": 89,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_89\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_90",
+      "seed": 90,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_90\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_91",
+      "seed": 91,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_91\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_92",
+      "seed": 92,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_92\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_93",
+      "seed": 93,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_93\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_94",
+      "seed": 94,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_94\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_95",
+      "seed": 95,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_95\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_96",
+      "seed": 96,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_96\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_97",
+      "seed": 97,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_97\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_98",
+      "seed": 98,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_98\\summary.json"
+    },
+    {
+      "condition": "delta_o0.95_v0.70",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_99",
+      "seed": 99,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.95_v0.70\\seed_99\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_0",
+      "seed": 0,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_0\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_1",
+      "seed": 1,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_1\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_2",
+      "seed": 2,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_2\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_3",
+      "seed": 3,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_3\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_4",
+      "seed": 4,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_4\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_5",
+      "seed": 5,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_5\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_6",
+      "seed": 6,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_6\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_7",
+      "seed": 7,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_7\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_8",
+      "seed": 8,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_8\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_9",
+      "seed": 9,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_9\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_10",
+      "seed": 10,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_10\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_11",
+      "seed": 11,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_11\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_12",
+      "seed": 12,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_12\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_13",
+      "seed": 13,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_13\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_14",
+      "seed": 14,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_14\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_15",
+      "seed": 15,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_15\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_16",
+      "seed": 16,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_16\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_17",
+      "seed": 17,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_17\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_18",
+      "seed": 18,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_18\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_19",
+      "seed": 19,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_19\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_20",
+      "seed": 20,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_20\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_21",
+      "seed": 21,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_21\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_22",
+      "seed": 22,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_22\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_23",
+      "seed": 23,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_23\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_24",
+      "seed": 24,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_24\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_25",
+      "seed": 25,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_25\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_26",
+      "seed": 26,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_26\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_27",
+      "seed": 27,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_27\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_28",
+      "seed": 28,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_28\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_29",
+      "seed": 29,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_29\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_30",
+      "seed": 30,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_30\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_31",
+      "seed": 31,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_31\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_32",
+      "seed": 32,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_32\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_33",
+      "seed": 33,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_33\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_34",
+      "seed": 34,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_34\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_35",
+      "seed": 35,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_35\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_36",
+      "seed": 36,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_36\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_37",
+      "seed": 37,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_37\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_38",
+      "seed": 38,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_38\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_39",
+      "seed": 39,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_39\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_40",
+      "seed": 40,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_40\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_41",
+      "seed": 41,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_41\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_42",
+      "seed": 42,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_42\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_43",
+      "seed": 43,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_43\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_44",
+      "seed": 44,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_44\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_45",
+      "seed": 45,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_45\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_46",
+      "seed": 46,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_46\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_47",
+      "seed": 47,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_47\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_48",
+      "seed": 48,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_48\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_49",
+      "seed": 49,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_49\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_50",
+      "seed": 50,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_50\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_51",
+      "seed": 51,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_51\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_52",
+      "seed": 52,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_52\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_53",
+      "seed": 53,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_53\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_54",
+      "seed": 54,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_54\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_55",
+      "seed": 55,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_55\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_56",
+      "seed": 56,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_56\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_57",
+      "seed": 57,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_57\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_58",
+      "seed": 58,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_58\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_59",
+      "seed": 59,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_59\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_60",
+      "seed": 60,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_60\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_61",
+      "seed": 61,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_61\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_62",
+      "seed": 62,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_62\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_63",
+      "seed": 63,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_63\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_64",
+      "seed": 64,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_64\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_65",
+      "seed": 65,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_65\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_66",
+      "seed": 66,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_66\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_67",
+      "seed": 67,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_67\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_68",
+      "seed": 68,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_68\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_69",
+      "seed": 69,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_69\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_70",
+      "seed": 70,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_70\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_71",
+      "seed": 71,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_71\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_72",
+      "seed": 72,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_72\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_73",
+      "seed": 73,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_73\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_74",
+      "seed": 74,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_74\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_75",
+      "seed": 75,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_75\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_76",
+      "seed": 76,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_76\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_77",
+      "seed": 77,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_77\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_78",
+      "seed": 78,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_78\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_79",
+      "seed": 79,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_79\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_80",
+      "seed": 80,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_80\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_81",
+      "seed": 81,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_81\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_82",
+      "seed": 82,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_82\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_83",
+      "seed": 83,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_83\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_84",
+      "seed": 84,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_84\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_85",
+      "seed": 85,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_85\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_86",
+      "seed": 86,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_86\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_87",
+      "seed": 87,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_87\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_88",
+      "seed": 88,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_88\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_89",
+      "seed": 89,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_89\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_90",
+      "seed": 90,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_90\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_91",
+      "seed": 91,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_91\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_92",
+      "seed": 92,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_92\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_93",
+      "seed": 93,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_93\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_94",
+      "seed": 94,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_94\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_95",
+      "seed": 95,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_95\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_96",
+      "seed": 96,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_96\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_97",
+      "seed": 97,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_97\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_98",
+      "seed": 98,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_98\\summary.json"
+    },
+    {
+      "condition": "delta_o0.70_v0.95",
+      "out_dir": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_99",
+      "seed": 99,
+      "status": "skipped_completed",
+      "summary_path": "C:\\Users\\\u044f\\Documents\\RLpricewars\\results\\long_matrix_10m_plus\\block2_tabular_heterogeneity_10m_100seeds\\delta_o0.70_v0.95\\seed_99\\summary.json"
+    }
+  ],
+  "timestamp": "2026-05-30T18:15:11.946610+00:00"
+}

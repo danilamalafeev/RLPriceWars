@@ -1,0 +1,7 @@
+cell=0 label=representative:alpha=0.15:beta=4e-06 completed=100/100
+wrote raw sessions: C:\Users\ÿ\Documents\RLpricewars\results\long_matrix_10m_plus\block1_q_vs_q_10m_representative_100s\raw_sessions.csv
+wrote aggregate: C:\Users\ÿ\Documents\RLpricewars\results\long_matrix_10m_plus\block1_q_vs_q_10m_representative_100s\aggregate_by_cell.csv
+wrote summary: C:\Users\ÿ\Documents\RLpricewars\results\long_matrix_10m_plus\block1_q_vs_q_10m_representative_100s\summary.json
+sessions_completed=100 cells=1
+overall_average_profit_gain=0.8561116858282309
+overall_convergence_rate=0.0

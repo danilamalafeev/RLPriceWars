@@ -1,0 +1,98 @@
+{
+  "benchmark_values": {
+    "discrete_monopoly_actions": [
+      13,
+      13
+    ],
+    "discrete_monopoly_prices": [
+      1.9314388370030566,
+      1.9314388370030566
+    ],
+    "discrete_nash_actions": [
+      1,
+      1
+    ],
+    "discrete_nash_prices": [
+      1.4664687420453604,
+      1.4664687420453604
+    ],
+    "p_m": 1.9249809190175329,
+    "p_n": 1.472926660030884,
+    "pi_m_mean": 0.337459978414553,
+    "pi_n_mean": 0.22020400846622798
+  },
+  "best_cell_by_average_profit_gain": {
+    "alpha": 0.15,
+    "average_cycle_length": 1.49,
+    "average_long_run_price": 1.796742831993883,
+    "average_long_run_profit": 0.32058821457211295,
+    "average_periods_to_convergence": 10000000.0,
+    "average_profit_gain": 0.8561116858282309,
+    "beta": 4e-06,
+    "cell_id": 0,
+    "constant_price_frequency": 0.62,
+    "convergence_rate": 0.0,
+    "cycle_length_2_frequency": 0.29,
+    "median_periods_to_convergence": 10000000.0,
+    "median_profit_gain": 0.8708867292586706,
+    "mode": "representative",
+    "q05_profit_gain": 0.6193688225331982,
+    "q95_profit_gain": 0.9941926250593632,
+    "sessions": 100,
+    "share_profit_gain_above_0_5": 1.0,
+    "share_profit_gain_above_0_8": 0.67,
+    "share_profit_gain_positive": 1.0,
+    "std_long_run_price": 0.07600967101301132,
+    "std_long_run_profit": 0.013720685806347993,
+    "std_profit_gain": 0.11701481649416008
+  },
+  "best_cell_by_convergence_rate": {
+    "alpha": 0.15,
+    "average_cycle_length": 1.49,
+    "average_long_run_price": 1.796742831993883,
+    "average_long_run_profit": 0.32058821457211295,
+    "average_periods_to_convergence": 10000000.0,
+    "average_profit_gain": 0.8561116858282309,
+    "beta": 4e-06,
+    "cell_id": 0,
+    "constant_price_frequency": 0.62,
+    "convergence_rate": 0.0,
+    "cycle_length_2_frequency": 0.29,
+    "median_periods_to_convergence": 10000000.0,
+    "median_profit_gain": 0.8708867292586706,
+    "mode": "representative",
+    "q05_profit_gain": 0.6193688225331982,
+    "q95_profit_gain": 0.9941926250593632,
+    "sessions": 100,
+    "share_profit_gain_above_0_5": 1.0,
+    "share_profit_gain_above_0_8": 0.67,
+    "share_profit_gain_positive": 1.0,
+    "std_long_run_price": 0.07600967101301132,
+    "std_long_run_profit": 0.013720685806347993,
+    "std_profit_gain": 0.11701481649416008
+  },
+  "number_of_cells": 1,
+  "number_of_sessions_completed": 100,
+  "overall_average_profit_gain": 0.8561116858282309,
+  "overall_convergence_rate": 0.0,
+  "plot_warnings": [],
+  "run_config": {
+    "code_version": "unknown",
+    "convergence_window": 10000000,
+    "created_at": "2026-05-30T18:08:56.482351+00:00",
+    "delta": 0.95,
+    "dirty_worktree": null,
+    "eval_periods": 100000,
+    "format": "csv",
+    "k": 1,
+    "m": 15,
+    "max_periods": 10000000,
+    "mode": "representative",
+    "mu": 0.25,
+    "seed": 10000,
+    "sessions": 100,
+    "workers": 6,
+    "xi": 0.1
+  },
+  "total_wall_time_seconds": 86.62750270000106
+}

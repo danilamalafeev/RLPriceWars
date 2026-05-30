@@ -1,0 +1,48 @@
+{
+  "alpha_0": 0.15,
+  "alpha_1": 0.15,
+  "benchmarks": {
+    "p_m": 1.9249809190175329,
+    "p_n": 1.472926660030884,
+    "pi_m": [
+      0.337459978414553,
+      0.337459978414553
+    ],
+    "pi_n": [
+      0.22020400846622798,
+      0.22020400846622798
+    ]
+  },
+  "beta_0": 4e-06,
+  "beta_1": 4e-06,
+  "condition": "delta_o0.70_v0.95",
+  "converged": false,
+  "delta_0": 0.7,
+  "delta_1": 0.95,
+  "detected_cycle_length": 3,
+  "distance_to_monopoly_price": 0.09686812399155853,
+  "distance_to_nash_price": 0.35518613499509044,
+  "eval_periods": 100000,
+  "final_avg_price_oracle": 1.8410292767905683,
+  "final_avg_price_victim": 1.8151963132613802,
+  "final_avg_profit_oracle": 0.31063370513105687,
+  "final_avg_profit_victim": 0.3346516801532488,
+  "final_market_price_mean": 1.8281127950259743,
+  "final_profit_asymmetry": -0.02401797502219194,
+  "final_profit_gain_oracle": 0.7712161411029347,
+  "final_profit_gain_victim": 0.9760498483570448,
+  "m": 15,
+  "market_config": {
+    "costs": null,
+    "demand_scale": 1.0,
+    "m": 15,
+    "mu": 0.25,
+    "n": 2,
+    "outside_quality": 0.0,
+    "qualities": null,
+    "xi": 0.1
+  },
+  "max_periods": 10000000,
+  "periods_to_convergence": 10000000,
+  "seed": 42
+}
