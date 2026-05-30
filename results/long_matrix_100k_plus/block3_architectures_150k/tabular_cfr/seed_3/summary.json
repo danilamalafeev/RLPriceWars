@@ -1,0 +1,31 @@
+{
+  "benchmarks": {
+    "p_m": 1.9249809190175329,
+    "p_n": 1.472926660030884,
+    "pi_m": [
+      0.337459978414553,
+      0.337459978414553
+    ],
+    "pi_n": [
+      0.22020400846622798,
+      0.22020400846622798
+    ],
+    "static_cooperative_action": 13,
+    "static_cooperative_price": 1.9314388370030566
+  },
+  "final_eval_avg_price_oracle": 1.5637501054778695,
+  "final_eval_avg_price_victim": 1.697468365280889,
+  "final_eval_avg_profit_oracle": 0.31156933268986176,
+  "final_eval_avg_profit_victim": 0.21892012284632073,
+  "final_eval_distance_to_monopoly_price": 0.2943716836381536,
+  "final_eval_distance_to_nash_price": 0.1576825753484954,
+  "final_eval_market_price_mean": 1.6306092353793793,
+  "final_eval_oracle_profit_gain": 0.7791955007825929,
+  "final_eval_profit_asymmetry": 0.09264920984354102,
+  "final_eval_victim_profit_gain": -0.010949426459676727,
+  "max_eval_profit_asymmetry": 0.09264920984354102,
+  "mean_last_5_eval_profit_asymmetry": 0.09223555149292806,
+  "oracle_kind": "tabular_cfr",
+  "seed": 3,
+  "victim_kind": "adaptive_q"
+}

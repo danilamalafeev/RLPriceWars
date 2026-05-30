@@ -167,6 +167,7 @@ config.json
 train_metrics.csv
 eval_metrics.csv
 summary.json
+progress.jsonl
 ```
 
 The key summary fields are:
@@ -186,6 +187,39 @@ final_eval_distance_to_monopoly_price
 
 Prices are essential for interpretation: profit alone cannot distinguish
 collusion, destructive undercutting, price umbrellas, and strategic dominance.
+
+`progress.jsonl` is streamed during long runs when `--out-dir` is set. Each
+record includes step, elapsed time, recent profit/price windows, rollout backend,
+rollout horizon/particles, and device. The same progress is printed to stdout so
+scheduler logs update while the run is active.
+
+## Rollout LOLA Backend
+
+`tabular_rollout_lola` supports the original NumPy backend and a vectorized
+PyTorch backend:
+
+```powershell
+python -m experiments.dqn_oracle_vs_qvictim --oracle-kind tabular_rollout_lola --rollout-lola-backend torch --device cpu --total-steps 1000 --eval-every 500 --eval-steps 200
+```
+
+After installing a CUDA-enabled PyTorch build, switch to:
+
+```powershell
+python -m experiments.dqn_oracle_vs_qvictim --oracle-kind tabular_rollout_lola --rollout-lola-backend torch --device cuda --total-steps 1000 --eval-every 500 --eval-steps 200
+```
+
+The matrix scheduler exposes the same rollout-only controls:
+
+```powershell
+python -m scripts.run_experiment_matrix --blocks block4_rollout --rollout-backend torch --rollout-device cuda --max-rollout 1
+```
+
+Use the micro-benchmark helper for quick backend comparisons without touching
+long-run result directories:
+
+```powershell
+python -m scripts.benchmark_rollout_lola --backend torch --device cpu --B 64 --K 15 --horizon 5 --particles 32
+```
 
 ## Market Kernel
 

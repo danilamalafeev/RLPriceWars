@@ -1,0 +1,10 @@
+$ C:\ProgramData\Anaconda3\python.exe -m experiments.dqn_oracle_vs_qvictim --oracle-kind dqn --seed 5 --total-steps 150000 --eval-every 5000 --eval-steps 2000 --out-dir C:\Users\я\Documents\RLpricewars\results\long_matrix_100k_plus\block3_architectures_150k\dqn\seed_5
+
+oracle_kind=dqn seed=5
+victim_kind=adaptive_q
+final_eval_avg_profit_oracle=0.3090910911962856
+final_eval_avg_profit_victim=0.235263227647054
+final_eval_profit_asymmetry=0.07382786354923157
+final_eval_avg_price_oracle=1.5990182028030977
+final_eval_avg_price_victim=1.6996121921762823
+final_eval_market_price_mean=1.64931519748969

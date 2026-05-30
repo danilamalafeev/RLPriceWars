@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +23,7 @@ from neural.reservoir import ReservoirConfig, init_reservoir_buffers, reservoir_
 @dataclass(frozen=True)
 class QVictimOracleConfig:
     oracle_kind: str = "dqn"  # "actor_critic", "dqn", "dqn_jepa", "dqn_regret", "tabular_cfr", "tabular_multi_cfr", "tabular_lola", "tabular_model_lola", or "tabular_rollout_lola"
+    victim_kind: str = "adaptive_q"  # "adaptive_q" or "static_cooperative"
     seed: int = 0
     B: int = 64
     H: int = 8
@@ -78,10 +81,25 @@ class QVictimOracleConfig:
     rollout_lola_oracle_rollout_policy: str = "greedy_best_response"
     rollout_lola_discount: float = 0.95
     rollout_lola_include_immediate: bool = True
+    rollout_lola_backend: str = "numpy"
 
     asymmetry_coef: float = 0.0
     device: str = "cpu"
     out_dir: str | None = None
+
+
+VALID_VICTIM_KINDS = {"adaptive_q", "static_cooperative"}
+VALID_ROLLOUT_LOLA_BACKENDS = {"numpy", "torch"}
+
+
+def resolve_torch_device(device: str | torch.device) -> torch.device:
+    resolved = torch.device(device)
+    if resolved.type == "cuda" and not torch.cuda.is_available():
+        raise RuntimeError(
+            "CUDA device was requested, but this Python environment has CPU-only PyTorch "
+            f"({torch.__version__}). Install a CUDA-enabled torch build or use --device cpu."
+        )
+    return resolved
 
 
 def make_calvano_vec_env(B: int, H: int, K: int, seed: int):
@@ -115,6 +133,12 @@ def victim_epsilon(beta: float, t: int | np.ndarray) -> np.ndarray:
     return np.exp(-beta * np.asarray(t, dtype=np.float64))
 
 
+def victim_behavior_epsilon(victim: dict[str, Any], beta: float) -> np.ndarray:
+    if victim.get("kind") == "static_cooperative":
+        return np.zeros(victim["Q"].shape[0], dtype=np.float64)
+    return victim_epsilon(beta, victim["t"])
+
+
 def init_victim_state(
     B: int,
     K: int,
@@ -135,10 +159,52 @@ def init_victim_state(
     for a_v in range(K):
         q0[:, a_v] = float(np.mean(profit_matrix[:, a_v, 1])) / (1.0 - delta)
     return {
+        "kind": "adaptive_q",
         "Q": np.repeat(q0[None, :, :], B, axis=0),
         "state_id": rng.integers(0, S, size=B, dtype=np.int64),
         "t": np.zeros(B, dtype=np.int64),
     }
+
+
+def static_cooperative_action(benchmarks: StaticBenchmarks) -> int:
+    return int(np.asarray(benchmarks.monopoly_actions, dtype=np.int64)[1])
+
+
+def init_static_cooperative_victim_state(
+    B: int,
+    K: int,
+    benchmarks: StaticBenchmarks,
+    rng: np.random.Generator | None = None,
+    seed: int | None = None,
+) -> dict[str, Any]:
+    if rng is None:
+        rng = np.random.default_rng(seed)
+    S = K * K
+    action = static_cooperative_action(benchmarks)
+    q0 = np.zeros((S, K), dtype=np.float64)
+    q0[:, action] = 1.0
+    return {
+        "kind": "static_cooperative",
+        "Q": np.repeat(q0[None, :, :], B, axis=0),
+        "state_id": rng.integers(0, S, size=B, dtype=np.int64),
+        "t": np.zeros(B, dtype=np.int64),
+        "static_action": action,
+    }
+
+
+def init_victim_by_kind(
+    victim_kind: str,
+    B: int,
+    K: int,
+    benchmarks: StaticBenchmarks,
+    delta: float,
+    rng: np.random.Generator,
+) -> dict[str, Any]:
+    if victim_kind == "adaptive_q":
+        return init_victim_state(B, K, benchmarks, delta, rng)
+    if victim_kind == "static_cooperative":
+        return init_static_cooperative_victim_state(B, K, benchmarks, rng)
+    raise ValueError(f"unknown victim_kind: {victim_kind}")
 
 
 def victim_select_actions(
@@ -149,6 +215,8 @@ def victim_select_actions(
     greedy: bool = False,
     epsilon_override: float | None = None,
 ) -> np.ndarray:
+    if victim.get("kind") == "static_cooperative":
+        return np.full(victim["Q"].shape[0], int(victim["static_action"]), dtype=np.int64)
     B = victim["Q"].shape[0]
     if epsilon_override is not None:
         eps = np.full(B, float(epsilon_override), dtype=np.float64)
@@ -176,6 +244,10 @@ def update_victim_q(
     B = victim["Q"].shape[0]
     old_state = victim["state_id"].copy()
     next_state = (oracle_actions.astype(np.int64) * K + victim_actions.astype(np.int64)).astype(np.int64)
+    if victim.get("kind") == "static_cooperative":
+        victim["state_id"] = next_state
+        victim["t"] += 1
+        return
     rows = np.arange(B)
     old = victim["Q"][rows, old_state, victim_actions]
     next_max = np.max(victim["Q"][rows, next_state, :], axis=1)
@@ -258,6 +330,39 @@ def victim_policy_probs_from_q(
         z = z - np.max(z, axis=-1, keepdims=True)
         exp_z = np.exp(z)
         return exp_z / np.clip(np.sum(exp_z, axis=-1, keepdims=True), 1e-12, None)
+    raise ValueError(f"unknown victim policy mode: {mode}")
+
+
+def victim_policy_probs_from_q_torch(
+    q_values: torch.Tensor,
+    K: int,
+    mode: str,
+    epsilon: torch.Tensor | float | None = None,
+    tau: float = 0.05,
+) -> torch.Tensor:
+    q = q_values.to(dtype=torch.float32)
+    if q.shape[-1] != K:
+        raise ValueError(f"q_values last dimension must be K={K}, got {q.shape[-1]}")
+    if mode == "greedy":
+        greedy_actions = torch.argmax(q, dim=-1, keepdim=True)
+        probs = torch.zeros_like(q)
+        return probs.scatter_(-1, greedy_actions, 1.0)
+    if mode == "epsilon_greedy":
+        greedy_actions = torch.argmax(q, dim=-1, keepdim=True)
+        if epsilon is None:
+            eps = torch.zeros(q.shape[:-1], dtype=q.dtype, device=q.device)
+        elif isinstance(epsilon, torch.Tensor):
+            eps = epsilon.to(device=q.device, dtype=q.dtype)
+        else:
+            eps = torch.full(q.shape[:-1], float(epsilon), dtype=q.dtype, device=q.device)
+        while eps.ndim < q.ndim - 1:
+            eps = eps.unsqueeze(-1)
+        eps = torch.clamp(torch.broadcast_to(eps, q.shape[:-1]), 0.0, 1.0)
+        probs = torch.full_like(q, 1.0 / float(K)) * eps.unsqueeze(-1)
+        greedy_bonus = torch.gather(probs, -1, greedy_actions) + (1.0 - eps).unsqueeze(-1)
+        return probs.scatter_(-1, greedy_actions, greedy_bonus)
+    if mode == "softmax":
+        return torch.softmax(q / max(float(tau), 1e-12), dim=-1)
     raise ValueError(f"unknown victim policy mode: {mode}")
 
 
@@ -695,8 +800,108 @@ def tabular_rollout_lola_values(
     return values, metrics
 
 
+def tabular_rollout_lola_values_torch(
+    victim: dict[str, Any],
+    profit_matrix: np.ndarray,
+    K: int,
+    alpha: float,
+    delta: float,
+    beta: float,
+    horizon: int,
+    num_particles: int,
+    victim_policy_mode: str,
+    oracle_rollout_policy: str,
+    discount: float,
+    include_immediate: bool,
+    generator: torch.Generator,
+    device: torch.device,
+    price_grid: np.ndarray | None = None,
+) -> tuple[torch.Tensor, dict[str, float]]:
+    device = resolve_torch_device(device)
+    Q = torch.as_tensor(victim["Q"], dtype=torch.float32, device=device)
+    B, S, _ = Q.shape
+    horizon = max(int(horizon), 1)
+    num_particles = max(int(num_particles), 1)
+
+    profit_o_matrix = torch.as_tensor(profit_matrix[:, :, 0], dtype=torch.float32, device=device)
+    profit_v_matrix = torch.as_tensor(profit_matrix[:, :, 1], dtype=torch.float32, device=device)
+    prices = None if price_grid is None else torch.as_tensor(price_grid, dtype=torch.float32, device=device)
+
+    Q_clone = Q[:, None, None, :, :].expand(B, K, num_particles, S, K).clone()
+    old_state = torch.as_tensor(victim["state_id"], dtype=torch.long, device=device)
+    old_t = torch.as_tensor(victim["t"], dtype=torch.long, device=device)
+    state_clone = old_state[:, None, None].expand(B, K, num_particles).clone()
+    t_clone = old_t[:, None, None].expand(B, K, num_particles).clone()
+
+    rows_b = torch.arange(B, device=device).view(B, 1, 1)
+    rows_k = torch.arange(K, device=device).view(1, K, 1)
+    rows_p = torch.arange(num_particles, device=device).view(1, 1, num_particles)
+    candidate_actions = torch.arange(K, dtype=torch.long, device=device).view(1, K, 1).expand(B, K, num_particles)
+
+    total = torch.zeros((B, K, num_particles), dtype=torch.float32, device=device)
+    first_profit = torch.zeros_like(total)
+    future_profit = torch.zeros_like(total)
+    oracle_price_sum = torch.zeros_like(total)
+    victim_price_sum = torch.zeros_like(total)
+
+    for ell in range(horizon):
+        q_current = Q_clone[rows_b, rows_k, rows_p, state_clone, :]
+        eps = torch.exp(-float(beta) * t_clone.to(dtype=torch.float32))
+        pi_v = victim_policy_probs_from_q_torch(q_current, K, victim_policy_mode, epsilon=eps)
+
+        if ell == 0 or oracle_rollout_policy == "fixed_first_action":
+            action_o = candidate_actions
+        elif oracle_rollout_policy == "greedy_best_response":
+            expected_profit = torch.einsum("...v,ov->...o", pi_v, profit_o_matrix)
+            action_o = torch.argmax(expected_profit, dim=-1).to(torch.long)
+        else:
+            raise ValueError(f"unknown rollout_lola_oracle_rollout_policy: {oracle_rollout_policy}")
+
+        action_v = torch.multinomial(
+            pi_v.reshape(-1, K),
+            num_samples=1,
+            replacement=True,
+            generator=generator,
+        ).reshape(B, K, num_particles).to(torch.long)
+
+        profit_o = profit_o_matrix[action_o, action_v]
+        profit_v = profit_v_matrix[action_o, action_v]
+        discount_ell = float(discount) ** ell
+        if ell == 0:
+            first_profit = profit_o
+        else:
+            future_profit += discount_ell * profit_o
+        if include_immediate or ell > 0:
+            total += discount_ell * profit_o
+        if prices is not None:
+            oracle_price_sum += prices[action_o]
+            victim_price_sum += prices[action_v]
+
+        next_state = (action_o * K + action_v).to(torch.long)
+        old_q = Q_clone[rows_b, rows_k, rows_p, state_clone, action_v]
+        next_max = torch.max(Q_clone[rows_b, rows_k, rows_p, next_state, :], dim=-1).values
+        target = profit_v + float(delta) * next_max
+        Q_clone[rows_b, rows_k, rows_p, state_clone, action_v] = (1.0 - float(alpha)) * old_q + float(alpha) * target
+        state_clone = next_state
+        t_clone = t_clone + 1
+
+    values = torch.mean(total, dim=2)
+    first_profit_acc = torch.mean(first_profit, dim=2)
+    future_profit_acc = torch.mean(future_profit, dim=2)
+    if prices is not None:
+        oracle_price_acc = torch.mean(oracle_price_sum / float(horizon), dim=2)
+        victim_price_acc = torch.mean(victim_price_sum / float(horizon), dim=2)
+    metrics = {
+        "rollout_lola_first_step_profit": float(torch.mean(first_profit_acc).detach().item()),
+        "rollout_lola_future_profit": float(torch.mean(future_profit_acc).detach().item()),
+        "rollout_lola_victim_price_simulated": float(torch.mean(victim_price_acc).detach().item()) if prices is not None else float("nan"),
+        "rollout_lola_oracle_price_simulated": float(torch.mean(oracle_price_acc).detach().item()) if prices is not None else float("nan"),
+    }
+    return values, metrics
+
+
 def tabular_rollout_lola_select_actions(
-    rollout_values: np.ndarray,
+    rollout_values: np.ndarray | torch.Tensor,
     tau: float,
     epsilon: float,
     generator: torch.Generator,
@@ -1002,11 +1207,81 @@ def _nanmean_or_default(values: list[float], default: float = 0.0) -> float:
     return float(np.nanmean(arr))
 
 
+def _utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def _progress_recent_metrics(pending: dict[str, list[Any]]) -> dict[str, float]:
+    if pending["reward"]:
+        rewards_avg = np.mean(np.stack(pending["reward"]), axis=0)
+    else:
+        rewards_avg = np.full(2, np.nan, dtype=np.float64)
+    if pending["price"]:
+        prices_avg = np.mean(np.stack(pending["price"]), axis=0)
+    else:
+        prices_avg = np.full(2, np.nan, dtype=np.float64)
+    return {
+        "avg_profit_oracle": float(rewards_avg[0]),
+        "avg_profit_victim": float(rewards_avg[1]),
+        "avg_price_oracle": float(prices_avg[0]),
+        "avg_price_victim": float(prices_avg[1]),
+    }
+
+
+def _write_progress(
+    config: QVictimOracleConfig,
+    progress_path: Path | None,
+    step: int,
+    elapsed_seconds: float,
+    recent_metrics: dict[str, float],
+    event: str,
+) -> None:
+    if progress_path is None:
+        return
+    steps_per_second = float(step / max(elapsed_seconds, 1.0e-12))
+    row = {
+        "timestamp": _utc_now_iso(),
+        "event": event,
+        "oracle_kind": config.oracle_kind,
+        "victim_kind": config.victim_kind,
+        "seed": config.seed,
+        "step": int(step),
+        "total_steps": int(config.total_steps),
+        "elapsed_seconds": float(elapsed_seconds),
+        "steps_per_second": steps_per_second,
+        "avg_profit_oracle": recent_metrics["avg_profit_oracle"],
+        "avg_profit_victim": recent_metrics["avg_profit_victim"],
+        "avg_price_oracle": recent_metrics["avg_price_oracle"],
+        "avg_price_victim": recent_metrics["avg_price_victim"],
+        "rollout_lola_horizon": int(config.rollout_lola_horizon),
+        "rollout_lola_num_particles": int(config.rollout_lola_num_particles),
+        "rollout_lola_backend": config.rollout_lola_backend,
+        "device": str(config.device),
+    }
+    progress_path.parent.mkdir(parents=True, exist_ok=True)
+    with progress_path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(row, sort_keys=True) + "\n")
+    print(
+        "[progress] "
+        f"{config.oracle_kind} seed={config.seed} step={step}/{config.total_steps} "
+        f"{steps_per_second:.2f} steps/s "
+        f"profit=({recent_metrics['avg_profit_oracle']:.4f},{recent_metrics['avg_profit_victim']:.4f}) "
+        f"price=({recent_metrics['avg_price_oracle']:.4f},{recent_metrics['avg_price_victim']:.4f}) "
+        f"rollout={config.rollout_lola_backend}/h{config.rollout_lola_horizon}/p{config.rollout_lola_num_particles} "
+        f"device={config.device}",
+        flush=True,
+    )
+
+
 def evaluate(config: QVictimOracleConfig, params, buffers, benchmarks: StaticBenchmarks, policy_value=None) -> dict[str, float]:
-    device = torch.device(config.device)
+    if config.victim_kind not in VALID_VICTIM_KINDS:
+        raise ValueError(f"unknown victim_kind: {config.victim_kind}")
+    if config.rollout_lola_backend not in VALID_ROLLOUT_LOLA_BACKENDS:
+        raise ValueError(f"unknown rollout_lola_backend: {config.rollout_lola_backend}")
+    device = resolve_torch_device(config.device)
     rng = np.random.default_rng(config.seed + 10_000)
     env, price_grid, _, profit_matrix = make_calvano_vec_env(config.B, config.H, config.K, config.seed + 10_000)
-    victim = init_victim_state(config.B, config.K, benchmarks, config.victim_delta, rng)
+    victim = init_victim_by_kind(config.victim_kind, config.B, config.K, benchmarks, config.victim_delta, rng)
     _warm_history(env, victim, config.H, config.K, rng)
     obs_cfg = None
     h = None
@@ -1069,22 +1344,41 @@ def evaluate(config: QVictimOracleConfig, params, buffers, benchmarks: StaticBen
                 )
                 action_o = action_o_t.cpu().numpy().astype(np.int64)
             elif config.oracle_kind == "tabular_rollout_lola":
-                rollout_values, _ = tabular_rollout_lola_values(
-                    victim,
-                    profit_matrix,
-                    config.K,
-                    config.victim_alpha,
-                    config.victim_delta,
-                    config.victim_beta,
-                    config.rollout_lola_horizon,
-                    config.rollout_lola_num_particles,
-                    config.rollout_lola_victim_policy,
-                    config.rollout_lola_oracle_rollout_policy,
-                    config.rollout_lola_discount,
-                    config.rollout_lola_include_immediate,
-                    eval_rollout_rng,
-                    price_grid,
-                )
+                if config.rollout_lola_backend == "torch":
+                    rollout_values, _ = tabular_rollout_lola_values_torch(
+                        victim,
+                        profit_matrix,
+                        config.K,
+                        config.victim_alpha,
+                        config.victim_delta,
+                        config.victim_beta,
+                        config.rollout_lola_horizon,
+                        config.rollout_lola_num_particles,
+                        config.rollout_lola_victim_policy,
+                        config.rollout_lola_oracle_rollout_policy,
+                        config.rollout_lola_discount,
+                        config.rollout_lola_include_immediate,
+                        eval_gen,
+                        device,
+                        price_grid,
+                    )
+                else:
+                    rollout_values, _ = tabular_rollout_lola_values(
+                        victim,
+                        profit_matrix,
+                        config.K,
+                        config.victim_alpha,
+                        config.victim_delta,
+                        config.victim_beta,
+                        config.rollout_lola_horizon,
+                        config.rollout_lola_num_particles,
+                        config.rollout_lola_victim_policy,
+                        config.rollout_lola_oracle_rollout_policy,
+                        config.rollout_lola_discount,
+                        config.rollout_lola_include_immediate,
+                        eval_rollout_rng,
+                        price_grid,
+                    )
                 action_o_t, _ = tabular_rollout_lola_select_actions(
                     rollout_values,
                     config.rollout_lola_tau,
@@ -1104,7 +1398,7 @@ def evaluate(config: QVictimOracleConfig, params, buffers, benchmarks: StaticBen
                 else:
                     logits, _ = mlp_policy_forward(params, {}, obs, None)
                     action_o = torch.argmax(logits, dim=1).cpu().numpy().astype(np.int64)
-            eps_v = victim_epsilon(config.victim_beta, victim["t"])
+            eps_v = victim_behavior_epsilon(victim, config.victim_beta)
             action_v = victim_select_actions(victim, config.K, beta=config.victim_beta, rng=rng, greedy=False)
             actions = np.stack([action_o, action_v], axis=1).astype(np.int64)
             cm.step(env, actions)
@@ -1138,16 +1432,20 @@ def evaluate(config: QVictimOracleConfig, params, buffers, benchmarks: StaticBen
 
 
 def run_experiment(config: QVictimOracleConfig) -> dict[str, Any]:
+    if config.victim_kind not in VALID_VICTIM_KINDS:
+        raise ValueError(f"unknown victim_kind: {config.victim_kind}")
+    if config.rollout_lola_backend not in VALID_ROLLOUT_LOLA_BACKENDS:
+        raise ValueError(f"unknown rollout_lola_backend: {config.rollout_lola_backend}")
     np.random.seed(config.seed)
     torch.manual_seed(config.seed)
-    device = torch.device(config.device)
+    device = resolve_torch_device(config.device)
     rng = np.random.default_rng(config.seed)
     torch_gen = torch.Generator(device=device).manual_seed(config.seed)
     tabular_cfr_kinds = {"tabular_cfr", "tabular_multi_cfr"}
     tabular_direct_kinds = tabular_cfr_kinds | {"tabular_lola", "tabular_model_lola", "tabular_rollout_lola"}
     rollout_rng = np.random.default_rng(config.seed + 40_000)
     env, price_grid, benchmarks, profit_matrix = make_calvano_vec_env(config.B, config.H, config.K, config.seed)
-    victim = init_victim_state(config.B, config.K, benchmarks, config.victim_delta, rng)
+    victim = init_victim_by_kind(config.victim_kind, config.B, config.K, benchmarks, config.victim_delta, rng)
     _warm_history(env, victim, config.H, config.K, rng)
     base_dim = observation_dim(config.H)
     obs_dim = base_dim + config.reservoir_dim
@@ -1241,6 +1539,8 @@ def run_experiment(config: QVictimOracleConfig) -> dict[str, Any]:
     rollout_logp: list[torch.Tensor] = []
     rollout_values: list[torch.Tensor] = []
     rollout_rewards: list[torch.Tensor] = []
+    progress_path = None if config.out_dir is None else Path(config.out_dir) / "progress.jsonl"
+    run_started = time.perf_counter()
     for step in range(1, config.total_steps + 1):
         eps_o = oracle_epsilon(config, step)
         prev_cfr_state_id = None
@@ -1350,22 +1650,41 @@ def run_experiment(config: QVictimOracleConfig) -> dict[str, Any]:
                 epsilon=victim_epsilon(config.victim_beta, victim["t"]),
             )
             victim_actions_pred = np.argmax(pi_v_current, axis=1).astype(np.int64)
-            rollout_values, rollout_value_metrics = tabular_rollout_lola_values(
-                victim,
-                profit_matrix,
-                config.K,
-                config.victim_alpha,
-                config.victim_delta,
-                config.victim_beta,
-                config.rollout_lola_horizon,
-                config.rollout_lola_num_particles,
-                config.rollout_lola_victim_policy,
-                config.rollout_lola_oracle_rollout_policy,
-                config.rollout_lola_discount,
-                config.rollout_lola_include_immediate,
-                rollout_rng,
-                price_grid,
-            )
+            if config.rollout_lola_backend == "torch":
+                rollout_values, rollout_value_metrics = tabular_rollout_lola_values_torch(
+                    victim,
+                    profit_matrix,
+                    config.K,
+                    config.victim_alpha,
+                    config.victim_delta,
+                    config.victim_beta,
+                    config.rollout_lola_horizon,
+                    config.rollout_lola_num_particles,
+                    config.rollout_lola_victim_policy,
+                    config.rollout_lola_oracle_rollout_policy,
+                    config.rollout_lola_discount,
+                    config.rollout_lola_include_immediate,
+                    torch_gen,
+                    device,
+                    price_grid,
+                )
+            else:
+                rollout_values, rollout_value_metrics = tabular_rollout_lola_values(
+                    victim,
+                    profit_matrix,
+                    config.K,
+                    config.victim_alpha,
+                    config.victim_delta,
+                    config.victim_beta,
+                    config.rollout_lola_horizon,
+                    config.rollout_lola_num_particles,
+                    config.rollout_lola_victim_policy,
+                    config.rollout_lola_oracle_rollout_policy,
+                    config.rollout_lola_discount,
+                    config.rollout_lola_include_immediate,
+                    rollout_rng,
+                    price_grid,
+                )
             action_o_t, rollout_select_metrics = tabular_rollout_lola_select_actions(
                 rollout_values,
                 config.rollout_lola_tau,
@@ -1410,7 +1729,7 @@ def run_experiment(config: QVictimOracleConfig) -> dict[str, Any]:
             q_max_val = float("nan")
 
         action_o = action_o_t.detach().cpu().numpy().astype(np.int64)
-        eps_v_arr = victim_epsilon(config.victim_beta, victim["t"])
+        eps_v_arr = victim_behavior_epsilon(victim, config.victim_beta)
         action_v = victim_select_actions(victim, config.K, beta=config.victim_beta, rng=rng, greedy=False)
         if config.oracle_kind in {"tabular_lola", "tabular_model_lola", "tabular_rollout_lola"}:
             victim_pred_accuracy_val = float(np.mean(victim_actions_pred == action_v))
@@ -1595,7 +1914,20 @@ def run_experiment(config: QVictimOracleConfig) -> dict[str, Any]:
         pending["eps_o"].append(eps_o)
         pending["eps_v"].append(float(np.mean(eps_v_arr)))
 
-        if step % config.log_every == 0 or step == config.total_steps:
+        log_due = step % config.log_every == 0 or step == config.total_steps
+        eval_due = step % config.eval_every == 0 or step == config.total_steps
+        if log_due or eval_due:
+            progress_event = "log_eval" if log_due and eval_due else ("log" if log_due else "eval")
+            _write_progress(
+                config,
+                progress_path,
+                step,
+                time.perf_counter() - run_started,
+                _progress_recent_metrics(pending),
+                progress_event,
+            )
+
+        if log_due:
             rewards_avg = np.mean(np.stack(pending["reward"]), axis=0)
             prices_avg = np.mean(np.stack(pending["price"]), axis=0)
             loss_mean = _nanmean_or_default(pending["loss"])
@@ -1663,7 +1995,7 @@ def run_experiment(config: QVictimOracleConfig) -> dict[str, Any]:
             for v in pending.values():
                 v.clear()
 
-        if step % config.eval_every == 0 or step == config.total_steps:
+        if eval_due:
             row = {"step": step}
             row.update(evaluate(config, params, buffers, benchmarks))
             eval_rows.append(row)
@@ -1686,6 +2018,7 @@ def make_summary(config: QVictimOracleConfig, eval_df: pd.DataFrame, benchmarks:
     asym = eval_df["eval_profit_asymmetry"] if "eval_profit_asymmetry" in eval_df else pd.Series(dtype=float)
     return {
         "oracle_kind": config.oracle_kind,
+        "victim_kind": config.victim_kind,
         "seed": config.seed,
         "final_eval_avg_profit_oracle": None if eval_df.empty else float(final["eval_avg_profit_oracle"]),
         "final_eval_avg_profit_victim": None if eval_df.empty else float(final["eval_avg_profit_victim"]),
@@ -1702,6 +2035,8 @@ def make_summary(config: QVictimOracleConfig, eval_df: pd.DataFrame, benchmarks:
         "benchmarks": {
             "p_n": float(benchmarks.p_n),
             "p_m": float(benchmarks.p_m),
+            "static_cooperative_action": static_cooperative_action(benchmarks),
+            "static_cooperative_price": float(benchmarks.price_grid[static_cooperative_action(benchmarks)]),
             "pi_n": [float(x) for x in benchmarks.pi_n],
             "pi_m": [float(x) for x in benchmarks.pi_m],
         },
@@ -1729,6 +2064,7 @@ def parse_args() -> argparse.Namespace:
         ],
         default="dqn",
     )
+    p.add_argument("--victim-kind", choices=sorted(VALID_VICTIM_KINDS), default="adaptive_q")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--B", type=int, default=64)
     p.add_argument("--H", type=int, default=8)
@@ -1772,6 +2108,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--rollout-lola-oracle-rollout-policy", choices=["greedy_best_response", "fixed_first_action"], default="greedy_best_response")
     p.add_argument("--rollout-lola-discount", type=float, default=0.95)
     p.add_argument("--rollout-lola-include-immediate", action=argparse.BooleanOptionalAction, default=True)
+    p.add_argument("--rollout-lola-backend", choices=sorted(VALID_ROLLOUT_LOLA_BACKENDS), default="numpy")
     p.add_argument("--asymmetry-coef", type=float, default=0.0)
     p.add_argument("--device", type=str, default="cpu")
     p.add_argument("--out-dir", type=str, default=None)
@@ -1782,6 +2119,7 @@ def main() -> None:
     args = parse_args()
     cfg = QVictimOracleConfig(
         oracle_kind=args.oracle_kind,
+        victim_kind=args.victim_kind,
         seed=args.seed,
         B=args.B,
         H=args.H,
@@ -1825,6 +2163,7 @@ def main() -> None:
         rollout_lola_oracle_rollout_policy=args.rollout_lola_oracle_rollout_policy,
         rollout_lola_discount=args.rollout_lola_discount,
         rollout_lola_include_immediate=args.rollout_lola_include_immediate,
+        rollout_lola_backend=args.rollout_lola_backend,
         asymmetry_coef=args.asymmetry_coef,
         device=args.device,
         out_dir=args.out_dir,
@@ -1832,6 +2171,7 @@ def main() -> None:
     result = run_experiment(cfg)
     s = result["summary"]
     print(f"oracle_kind={s['oracle_kind']} seed={s['seed']}")
+    print(f"victim_kind={s['victim_kind']}")
     print(f"final_eval_avg_profit_oracle={s['final_eval_avg_profit_oracle']}")
     print(f"final_eval_avg_profit_victim={s['final_eval_avg_profit_victim']}")
     print(f"final_eval_profit_asymmetry={s['final_eval_profit_asymmetry']}")
