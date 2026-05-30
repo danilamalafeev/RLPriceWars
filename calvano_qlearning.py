@@ -14,6 +14,12 @@ class QLearningConfig:
     alpha: float = 0.15
     beta: float = 4e-6
     delta: float = 0.95
+    alpha_0: float | None = None
+    alpha_1: float | None = None
+    beta_0: float | None = None
+    beta_1: float | None = None
+    delta_0: float | None = None
+    delta_1: float | None = None
     n: int = 2
     k: int = 1
     m: int = 15
@@ -81,14 +87,46 @@ def greedy_policy(Q: np.ndarray) -> np.ndarray:
     return np.argmax(Q, axis=2).astype(np.int64)
 
 
-def initialize_q_tables(profit_matrix: np.ndarray, delta: float, n: int, k: int, m: int) -> np.ndarray:
+def agent_learning_parameters(q_config: QLearningConfig) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    if q_config.n != 2:
+        raise ValueError("per-agent learning parameter overrides currently support n == 2")
+    alpha = np.array(
+        [
+            q_config.alpha if q_config.alpha_0 is None else q_config.alpha_0,
+            q_config.alpha if q_config.alpha_1 is None else q_config.alpha_1,
+        ],
+        dtype=np.float64,
+    )
+    beta = np.array(
+        [
+            q_config.beta if q_config.beta_0 is None else q_config.beta_0,
+            q_config.beta if q_config.beta_1 is None else q_config.beta_1,
+        ],
+        dtype=np.float64,
+    )
+    delta = np.array(
+        [
+            q_config.delta if q_config.delta_0 is None else q_config.delta_0,
+            q_config.delta if q_config.delta_1 is None else q_config.delta_1,
+        ],
+        dtype=np.float64,
+    )
+    return alpha, beta, delta
+
+
+def initialize_q_tables(profit_matrix: np.ndarray, delta: float | np.ndarray, n: int, k: int, m: int) -> np.ndarray:
     if n != 2:
         raise ValueError("Q initialization currently supports n == 2")
     S = state_space_size(n, k, m)
+    delta_arr = np.asarray(delta, dtype=np.float64)
+    if delta_arr.ndim == 0:
+        delta_arr = np.full(n, float(delta_arr), dtype=np.float64)
+    if delta_arr.shape != (n,):
+        raise ValueError(f"delta must be scalar or shape ({n},)")
     Q = np.zeros((n, S, m), dtype=np.float64)
     for a_i in range(m):
-        Q[0, :, a_i] = float(np.mean(profit_matrix[a_i, :, 0])) / (1.0 - delta)
-        Q[1, :, a_i] = float(np.mean(profit_matrix[:, a_i, 1])) / (1.0 - delta)
+        Q[0, :, a_i] = float(np.mean(profit_matrix[a_i, :, 0])) / (1.0 - delta_arr[0])
+        Q[1, :, a_i] = float(np.mean(profit_matrix[:, a_i, 1])) / (1.0 - delta_arr[1])
     return Q
 
 
@@ -200,8 +238,8 @@ def _train_session_numba(
     periods = max_periods
 
     for t in range(max_periods):
-        epsilon = np.exp(-beta * t)
         for i in range(n):
+            epsilon = np.exp(-beta[i] * t)
             if np.random.random() < epsilon:
                 actions[i] = np.random.randint(0, m)
             else:
@@ -217,7 +255,7 @@ def _train_session_numba(
                 if Q[i, next_state, a] > next_max:
                     next_max = Q[i, next_state, a]
             old = Q[i, state, actions[i]]
-            Q[i, state, actions[i]] = (1.0 - alpha) * old + alpha * (rewards[i] + delta * next_max)
+            Q[i, state, actions[i]] = (1.0 - alpha[i]) * old + alpha[i] * (rewards[i] + delta[i] * next_max)
             old_greedy = policy[i, state]
             new_greedy = _argmax_lowest(Q[i, state])
             if new_greedy != old_greedy:
@@ -291,13 +329,14 @@ def run_session(
     if benchmarks is None:
         benchmarks = build_static_benchmarks(market_config)
     qualities, costs = market_arrays(market_config)
-    Q0 = initialize_q_tables(benchmarks.profit_matrix, q_config.delta, q_config.n, q_config.k, q_config.m)
+    alpha, beta, delta = agent_learning_parameters(q_config)
+    Q0 = initialize_q_tables(benchmarks.profit_matrix, delta, q_config.n, q_config.k, q_config.m)
     session_seed = q_config.seed if seed is None else int(seed)
     converged, periods, policy, Q, last_state = _train_session_numba(
         Q0.copy(),
-        q_config.alpha,
-        q_config.beta,
-        q_config.delta,
+        alpha,
+        beta,
+        delta,
         q_config.n,
         q_config.k,
         q_config.m,

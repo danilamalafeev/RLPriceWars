@@ -312,8 +312,8 @@ def test_depth_sweep_config(tmp_path):
     config = tiny_config("reservoir_oracle_vs_mlp")
     tasks = build_depth_sweep_tasks(config, [0, 16], [0, 1], tmp_path)
     assert len(tasks) == 4
-    assert str(tasks[0]["out_dir"]).endswith("depth_0/seed_0")
-    assert str(tasks[-1]["out_dir"]).endswith("depth_16/seed_1")
+    assert tasks[0]["out_dir"].parts[-2:] == ("depth_0", "seed_0")
+    assert tasks[-1]["out_dir"].parts[-2:] == ("depth_16", "seed_1")
 
 
 def test_depth_sweep_smoke(tmp_path):

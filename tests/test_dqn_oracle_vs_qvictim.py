@@ -17,6 +17,7 @@ from experiments.dqn_oracle_vs_qvictim import (
     init_dqn_params,
     init_jepa_params,
     init_regret_params,
+    init_static_cooperative_victim_state,
     init_tabular_cfr_state,
     init_replay_buffer,
     init_victim_state,
@@ -24,6 +25,7 @@ from experiments.dqn_oracle_vs_qvictim import (
     jepa_predict,
     make_calvano_vec_env,
     oracle_counterfactual_profit,
+    parse_args as parse_oracle_args,
     replay_add,
     replay_sample,
     regret_forward,
@@ -39,8 +41,10 @@ from experiments.dqn_oracle_vs_qvictim import (
     tabular_model_lola_values,
     tabular_rollout_lola_select_actions,
     tabular_rollout_lola_values,
+    tabular_rollout_lola_values_torch,
     victim_policy_probs_from_q,
     victim_policy_from_q,
+    update_victim_q,
     victim_q_update,
     victim_select_actions,
 )
@@ -73,6 +77,39 @@ def test_victim_action_selection():
     random_actions = victim_select_actions(state, K, beta=0.0, rng=np.random.default_rng(2), epsilon_override=1.0)
     assert random_actions.shape == (B,)
     assert np.all((0 <= random_actions) & (random_actions < K))
+
+
+def test_static_cooperative_victim_is_non_adaptive():
+    B, K = 4, 5
+    _, _, benchmarks, _ = make_calvano_vec_env(B, H=4, K=K, seed=0)
+    state = init_static_cooperative_victim_state(B, K, benchmarks, seed=1)
+    before_q = state["Q"].copy()
+    actions0 = victim_select_actions(state, K, beta=0.0, rng=np.random.default_rng(2), epsilon_override=1.0)
+    update_victim_q(
+        state,
+        oracle_actions=np.arange(B) % K,
+        victim_actions=np.arange(B) % K,
+        rewards_victim=np.linspace(0.0, 1.0, B),
+        alpha=1.0,
+        delta=0.0,
+        K=K,
+    )
+    actions1 = victim_select_actions(state, K, beta=0.0, rng=np.random.default_rng(3), epsilon_override=1.0)
+    assert np.all(actions0 == int(benchmarks.monopoly_actions[1]))
+    assert np.all(actions1 == actions0)
+    np.testing.assert_allclose(state["Q"], before_q)
+
+
+def test_cli_default_victim_kind_is_adaptive_q(monkeypatch):
+    monkeypatch.setattr(sys, "argv", ["dqn_oracle_vs_qvictim"])
+    args = parse_oracle_args()
+    assert args.victim_kind == "adaptive_q"
+
+
+def test_cli_accepts_rollout_lola_backend_torch(monkeypatch):
+    monkeypatch.setattr(sys, "argv", ["dqn_oracle_vs_qvictim", "--rollout-lola-backend", "torch"])
+    args = parse_oracle_args()
+    assert args.rollout_lola_backend == "torch"
 
 
 def test_victim_policy_from_q_shape():
@@ -460,6 +497,80 @@ def test_tabular_rollout_lola_values_finite():
     )
     assert np.isfinite(values).all()
     assert all(np.isfinite(v) for v in metrics.values())
+
+
+def test_tabular_rollout_lola_values_torch_shape_finite_cpu():
+    B, K = 3, 4
+    _, price_grid, _, profit_matrix = make_calvano_vec_env(B, H=4, K=K, seed=0)
+    victim = init_victim_state(B, K, profit_matrix, delta=0.95, seed=1)
+    values, metrics = tabular_rollout_lola_values_torch(
+        victim,
+        profit_matrix,
+        K,
+        alpha=0.15,
+        delta=0.95,
+        beta=4e-6,
+        horizon=3,
+        num_particles=2,
+        victim_policy_mode="epsilon_greedy",
+        oracle_rollout_policy="greedy_best_response",
+        discount=0.95,
+        include_immediate=True,
+        generator=torch.Generator().manual_seed(17),
+        device=torch.device("cpu"),
+        price_grid=price_grid,
+    )
+    assert values.shape == (B, K)
+    assert torch.isfinite(values).all()
+    assert {
+        "rollout_lola_first_step_profit",
+        "rollout_lola_future_profit",
+        "rollout_lola_victim_price_simulated",
+        "rollout_lola_oracle_price_simulated",
+    }.issubset(metrics)
+    assert all(np.isfinite(v) for v in metrics.values())
+
+
+def test_tabular_rollout_lola_values_torch_matches_numpy_greedy_tiny():
+    B, K = 2, 4
+    _, price_grid, _, profit_matrix = make_calvano_vec_env(B, H=4, K=K, seed=0)
+    victim = init_victim_state(B, K, profit_matrix, delta=0.95, seed=1)
+    numpy_values, numpy_metrics = tabular_rollout_lola_values(
+        victim,
+        profit_matrix,
+        K,
+        alpha=0.15,
+        delta=0.95,
+        beta=4e-6,
+        horizon=3,
+        num_particles=3,
+        victim_policy_mode="greedy",
+        oracle_rollout_policy="fixed_first_action",
+        discount=0.95,
+        include_immediate=True,
+        rng=np.random.default_rng(18),
+        price_grid=price_grid,
+    )
+    torch_values, torch_metrics = tabular_rollout_lola_values_torch(
+        victim,
+        profit_matrix,
+        K,
+        alpha=0.15,
+        delta=0.95,
+        beta=4e-6,
+        horizon=3,
+        num_particles=3,
+        victim_policy_mode="greedy",
+        oracle_rollout_policy="fixed_first_action",
+        discount=0.95,
+        include_immediate=True,
+        generator=torch.Generator().manual_seed(18),
+        device=torch.device("cpu"),
+        price_grid=price_grid,
+    )
+    np.testing.assert_allclose(torch_values.detach().cpu().numpy(), numpy_values, rtol=1e-5, atol=1e-5)
+    for key, numpy_value in numpy_metrics.items():
+        np.testing.assert_allclose(torch_metrics[key], numpy_value, rtol=1e-5, atol=1e-5)
 
 
 def test_tabular_rollout_lola_select_actions_shape():
@@ -970,6 +1081,7 @@ def test_tabular_rollout_lola_loop_smoke():
         rollout_lola_num_particles=2,
         rollout_lola_tau=0.05,
         rollout_lola_epsilon=0.02,
+        rollout_lola_backend="torch",
     )
     result = run_dqn_oracle_vs_qvictim(config)
     train_df = result["train_metrics"]
@@ -1015,6 +1127,34 @@ def test_tabular_rollout_lola_loop_smoke():
     assert np.isfinite(eval_df.select_dtypes(include=[float, int]).to_numpy()).all()
 
 
+def test_tabular_rollout_lola_progress_jsonl(tmp_path):
+    out_dir = tmp_path / "rollout_progress"
+    config = DQNOracleConfig(
+        oracle_kind="tabular_rollout_lola",
+        seed=0,
+        B=3,
+        H=4,
+        K=5,
+        total_steps=6,
+        log_every=3,
+        eval_every=3,
+        eval_steps=4,
+        rollout_lola_horizon=2,
+        rollout_lola_num_particles=2,
+        rollout_lola_backend="torch",
+        out_dir=str(out_dir),
+    )
+    run_dqn_oracle_vs_qvictim(config)
+    progress_path = out_dir / "progress.jsonl"
+    assert progress_path.exists()
+    rows = [json.loads(line) for line in progress_path.read_text(encoding="utf-8").splitlines()]
+    assert len(rows) >= 2
+    assert rows[-1]["step"] == 6
+    assert rows[-1]["rollout_lola_backend"] == "torch"
+    assert rows[-1]["device"] == "cpu"
+    assert "steps_per_second" in rows[-1]
+
+
 def test_cli_smoke(tmp_path):
     out_dir = tmp_path / "dqn_cli"
     cmd = [
@@ -1050,6 +1190,26 @@ def test_cli_smoke(tmp_path):
     assert (out_dir / "summary.json").exists()
     summary = json.loads((out_dir / "summary.json").read_text())
     assert "final_eval_avg_profit_oracle" in summary
+
+
+def test_static_victim_run_writes_summary_kind(tmp_path):
+    out_dir = tmp_path / "static_victim"
+    config = DQNOracleConfig(
+        oracle_kind="tabular_cfr",
+        victim_kind="static_cooperative",
+        seed=0,
+        B=4,
+        H=5,
+        K=7,
+        total_steps=20,
+        eval_every=10,
+        eval_steps=20,
+        out_dir=str(out_dir),
+    )
+    result = run_dqn_oracle_vs_qvictim(config)
+    summary = json.loads((out_dir / "summary.json").read_text())
+    assert result["summary"]["victim_kind"] == "static_cooperative"
+    assert summary["victim_kind"] == "static_cooperative"
 
 
 def test_dqn_jepa_cli_smoke(tmp_path):
@@ -1316,6 +1476,8 @@ def test_cli_smoke_tabular_rollout_lola(tmp_path):
         "0.05",
         "--rollout-lola-epsilon",
         "0.02",
+        "--rollout-lola-backend",
+        "torch",
         "--out-dir",
         str(out_dir),
     ]
@@ -1323,6 +1485,7 @@ def test_cli_smoke_tabular_rollout_lola(tmp_path):
     assert (out_dir / "train_metrics.csv").exists()
     assert (out_dir / "eval_metrics.csv").exists()
     assert (out_dir / "summary.json").exists()
+    assert (out_dir / "progress.jsonl").exists()
     summary = json.loads((out_dir / "summary.json").read_text())
     assert summary["oracle_kind"] == "tabular_rollout_lola"
     assert "final_eval_avg_price_oracle" in summary

@@ -1,0 +1,10 @@
+Add-Content : The process cannot access the file 
+'C:\Users\ï\Documents\RLpricewars\results\long_matrix_100k_plus\block1_static_victim_100k\static_runner.log' because 
+it is being used by another process.
+At C:\Users\ï\Documents\RLpricewars\results\long_matrix_100k_plus\block1_static_victim_100k\run_static_control.ps1:34 
+char:51
++ ... atic $($task.mode) seed=$($task.seed)" | Add-Content -Path $runnerLog
++                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\ï\Docu...atic_runner.log:String) [Add-Content], IOException
+    + FullyQualifiedErrorId : GetContentWriterIOError,Microsoft.PowerShell.Commands.AddContentCommand
+ 
